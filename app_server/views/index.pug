@@ -1,5 +1,14 @@
 extends layout
 
 block content
+  hr
+  hr
   h1= title
   p Welcome to #{title}
+  
+  form(action='/album' method='POST' class='form')
+    div(class="container")
+      div(class="form-inline")
+          label(for='type') Search Album :  
+          input(type='text' id='type' class="form-control" name='type' placeholder='Album')
+          input(type='submit' value='Submit' class="btn btn-primary")  

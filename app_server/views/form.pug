@@ -1,0 +1,9 @@
+extends index
+
+form(action='/album' method='post' class='form')
+  table
+    tr
+      td: label(for='type') Search Album : 
+      td: input(id='type' type='text' name='type' placeholder='Track, Album, Artist')
+    tr
+      td: input(type='submit' value='Submit') 

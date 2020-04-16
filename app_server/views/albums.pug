@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1 Spotify Album results
+      .row
+        .col-12.col-md-8
+          .card
+            .card-block
+              h4 #{results.name}
+              table 
+                tr
+                  th Album 
+                  th Artist 
+                  th Release Date
+                tr
+                  td #{results.album}
+                  td #{results.artist}
+                  td #{results.release_date}
+              
+  
