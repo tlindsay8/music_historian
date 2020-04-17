@@ -6,17 +6,19 @@ block content
       h1 Spotify Album results
       .row
         .col-12.col-md-8
-          .card
-            .card-block
-              h4 #{results.name}
-              table 
-                tr
-                  th Album 
-                  th Artist 
-                  th Release Date
-                tr
-                  td #{results.album}
-                  td #{results.artist}
-                  td #{results.release_date}
+              each result in results
+                table(class="table") 
+                  tr
+                    th Album 
+                    th Artist 
+                    th Release Date
+                    th Album Title
+                  tr
+                    td: img(src=result.album)
+                    td #{result.artist}
+                    td #{result.release_date}
+                    td #{result.name}
+              else 
+                p There are no album results.
               
   
