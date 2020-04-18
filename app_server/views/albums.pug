@@ -3,22 +3,25 @@ extends layout
 block content
   .row.banner
     .col-12
-      h1 Spotify Album results
+      h1(id=centerText) Spotify Results
       .row
         .col-12.col-md-8
-              each result in results
-                table(class="table") 
+              
+                table(class="table table-striped table-hover") 
                   tr
                     th Album 
+                    th Song
                     th Artist 
                     th Release Date
                     th Album Title
-                  tr
-                    td: img(src=result.album)
-                    td #{result.artist}
-                    td #{result.release_date}
-                    td #{result.name}
-              else 
-                p There are no album results.
+                  each result in results
+                    tr
+                      td: img(src=result.album)
+                      td #{result.name}
+                      td: a(href=result.artistPage)  #{result.artist}
+                      td #{result.release_date}
+                      td #{result.album_name}
+                  else 
+                    p There are no album results.
               
   
