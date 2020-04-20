@@ -22,7 +22,7 @@ let albumGetResults = (req, res, next) => {
                         artistPage: ea.artists[0].external_urls.spotify,
 
                       });
-                      
+
         });
 
               return res
