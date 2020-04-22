@@ -6,17 +6,15 @@ html
     link(rel='stylesheet', href='/stylesheets/all.min.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.13.0/css/all.css')
 
   body
     nav.navbar.fixed-top.navbar-expand-md.navbar-light
       .container
-        a.navbar-brand(href='/') music_historian
+        a.navbar-brand(href='/'): i(class="fas fa-music") Music Historian
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='navbarMain')
         #navbarMain.navbar-collapse.collapse
-          ul.navbar-nav.mr-auto
-            li.nav-item
-              a.nav-link(href='/about')
-      
+            
     .container.content
       block content
 

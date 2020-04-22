@@ -105,8 +105,8 @@ body {
 	background: url("https://images.unsplash.com/photo-1556196148-1fb724238998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
 	background-size: cover;
 	/* background-position:center; */
-	margin: auto;
-	margin-left:25%;
+	/* margin: auto;
+	margin-left:25%; */
 }
 
 table tr,td {
