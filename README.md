@@ -20,6 +20,12 @@ Open a browser and go to
 localhost:3000/
 ```
 The website should appear. 
+
+Input a song title in the input area and hit submit. 
+
+A table with the top 20 search suggestions will appear.
+
 Enjoy!
+
 
 - Tyler Lindsay
