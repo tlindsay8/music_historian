@@ -5,6 +5,7 @@ const ctrlAlbum = require('../controllers/album');
 
 /* GET home page. */
 router.get('/', ctrlMain.index);
+// Call album results when post request is sent
 router.post('/', ctrlAlbum.albumGetResults);
 
 module.exports = router;
